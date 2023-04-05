@@ -1,1 +1,4 @@
 @host = https://api.the-odds-api.com
+
+### get all events
+get {{host}}/v4/sports/baseball_mlb/odds/?apiKey=#{Rails.application.credentials.odds_api_key}&regions=us&markets=h2h,spreads,totals
